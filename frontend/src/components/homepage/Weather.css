@@ -1,0 +1,70 @@
+.weather-card {
+  background-color: #131c2a;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.weather-card .title {
+  color: #4aa8ff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.weather-card .city {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.current img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.current .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.desc {
+  font-size: 13px;
+  color: #ddd;
+  margin: 0;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 8px;
+  flex-wrap: nowrap; /* 👉 satır içinde kalması için wrap devre dışı */
+}
+
+.day {
+  text-align: center;
+  font-size: 13px;
+  flex: 1;
+  min-width: 0;       /* 👉 genişlik sınırlamasını kaldır */
+}
+
+.day img {
+  width: 40px;
+  height: 40px;
+}

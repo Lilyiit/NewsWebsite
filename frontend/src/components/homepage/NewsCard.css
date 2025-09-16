@@ -1,0 +1,107 @@
+.news-card {
+  background-color: #1e293b;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.2s;
+  text-decoration: none;
+  max-height: 420px;
+  position: relative;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.news-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+.news-author {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: auto;
+}
+
+.news-source-tag {
+  background-color: #3b82f6;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-card-link {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  display: block;
+}
+
+.news-grid {
+  align-items: stretch;
+}
+
+/* 👇 Admin butonları */
+.admin-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-icon:hover {
+  background-color: #3b82f6;
+}
+
+.delete-icon:hover {
+  background-color: #ef4444;
+}

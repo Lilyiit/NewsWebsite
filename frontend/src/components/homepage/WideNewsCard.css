@@ -1,0 +1,53 @@
+.wide-news-card {
+  grid-column: span 2;
+  display: flex;
+  gap: 1.5rem;
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  align-items: center;
+}
+
+.wide-news-image {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.wide-news-content h3 {
+  font-size: 1.2rem;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  text-decoration: none;           /* ✅ çizgiyi kaldırır */
+}
+
+.wide-news-content p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.wide-news-content span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.wide-news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 🧨 Ayrıca garanti olsun diye bu satırı da ekleyebilirsin */
+.wide-news-card a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+

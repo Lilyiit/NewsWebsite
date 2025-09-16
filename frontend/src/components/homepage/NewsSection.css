@@ -1,0 +1,75 @@
+/* Üstteki 12 kart grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Ortadaki geniş kart */
+.middle-wide-wrapper {
+  width: 100%;
+  margin: 30px auto;
+}
+
+/* Alt kısımda tek büyük kart */
+.bottom-flex-row {
+  display: flex;
+  justify-content: center; /* Kartı ortalıyoruz */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* Tek büyük kart */
+.bottom-big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;  /* Yüksekliği artırıyoruz */
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  padding-left: 8px;
+  border-left: 4px solid #1e90ff;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* 👈 BURAYI EKLEDİK */
+}
+
+/* Mobil için uyarlamalar */
+@media (max-width: 768px) {
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* tek sütun */
+    gap: 1rem;
+  }
+
+  .news-card {
+    flex-direction: column;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .news-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .middle-wide-wrapper,
+  .bottom-big-card {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,86 @@
+.moderation-panel {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #0f172a; /* koyu zemin */
+  font-family: Arial, sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #f1f5f9;
+}
+
+.moderation-panel h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #e2e8f0;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 6px;
+}
+
+.comment-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  gap: 16px;
+}
+
+.comment-box:hover {
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.2); /* açık mavi parıltı */
+}
+
+.comment-box.deleted {
+  background-color: #1e293b;
+  border-left: 4px solid #f87171; /* kırmızı şerit */
+}
+
+.comment-box strong {
+  font-weight: 600;
+  color: #f8fafc;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.comment-box button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.comment-box button:hover {
+  background-color: #dc2626;
+}
+
+.comment-box .reason {
+  font-size: 13px;
+  color: #fca5a5;
+  margin-top: 6px;
+}
+
+/* ✅ Admin için cache temizleme butonu */
+.clear-cache-button {
+  background-color: #C5172E;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-cache-button:hover {
+  background-color: #85193C;
+}

@@ -1,0 +1,84 @@
+.add-news-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.add-news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-news-form input,
+.add-news-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #94a3b8;
+  border-radius: 5px;
+  background-color: #334155;
+  color: white;
+}
+
+.add-news-form input::placeholder,
+.add-news-form textarea::placeholder {
+  color: #cbd5e1;
+}
+
+.success-message {
+  color: #22c55e;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ✅ Submit butonu ayrı tanımlandı */
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4ade80;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #22c55e;
+}
+
+/* ✅ TAG SEÇİM ALANI */
+.tag-selector {
+  margin-top: 10px;
+}
+
+.tag-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-button {
+  padding: 6px 12px;
+  background-color: #334155;
+  color: #cbd5e1;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-button.selected {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.tag-button:hover {
+  background-color: #475569;
+  color: white;
+}

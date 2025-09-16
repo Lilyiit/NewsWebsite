@@ -1,0 +1,33 @@
+.league-table {
+    background-color: #1e293b;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    height: 100%;
+  }
+  
+  .league-title {
+    color: #3b82f6;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    text-align: left;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    padding-bottom: 0.5rem;
+  }
+  
+  td {
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    border-top: 1px solid #334155;
+  }
+  

@@ -1,0 +1,209 @@
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 1rem 2rem;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.logo .blue {
+  color: #3b82f6;
+}
+
+.logo .red {
+  color: #ef4444;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: #60a5fa;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.login-btn:hover {
+  background-color: #334155;
+  color: #3b82f6;
+}
+
+.signup-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 👇 Avatar + isim bloğu */
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.user-clickable-area {
+  cursor: pointer;
+  position: relative;
+}
+
+.user-name {
+  color: white;
+}
+
+.user-name::after {
+  content: ' ▼';
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  margin-left: 6px;
+}
+
+/* ✅ Dropdown menü artık JS ile kontrol ediliyor */
+.dropdown-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  background-color: #334155;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  min-width: 140px;
+  animation: dropdownFade 0.2s ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #1a222c;
+}
+
+/* ✅ Kategori altındaki tag dropdown (örneğin Technology > AI, Mobile...) */
+.dropdown-parent {
+  position: relative;
+}
+
+.clickable-link {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+
+/* Açılan alt menü */
+.dropdown-submenu {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  background-color: #334155;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  min-width: 160px;
+  animation: dropdownFade 0.2s ease-in-out;
+  list-style: none; /* ✅ Boş daireleri kaldırır */
+  margin: 0;
+}
+
+.dropdown-submenu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  list-style: none;
+  user-select: none;
+}
+
+.dropdown-submenu li:hover {
+  background-color: #1f2937;
+}
+
