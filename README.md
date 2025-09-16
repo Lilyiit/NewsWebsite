@@ -1,4 +1,5 @@
-AI-Powered News Website
+#AI-Powered News Website
+
 🚀 Project Overview
 
 This project is an AI-powered news website that detects and filters harmful or offensive comments, ensuring a safe and clean user experience.
