@@ -4,7 +4,7 @@ import './Weather.css';
 const Weather = () => {
   const [forecast, setForecast] = useState([]);
 
-  const apiKey = 'd469a7ed41f7c3d7cc757bf213a09a58'; // ← Buraya kendi API anahtarını ekle
+  const apiKey = // ← Buraya kendi API anahtarını ekle
   const lat = '41.0082';
   const lon = '28.9784';
 
