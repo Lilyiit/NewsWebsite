@@ -1,29 +1,22 @@
-#AI-Powered News Website
+📰 AI-Powered News Website
 
-🚀 Project Overview
+✨ Description:
+An AI-powered news website that automatically detects and filters harmful or offensive comments in real-time using n8n automation and natural language processing (NLP). Built with Python and Firebase, providing a safe and clean user experience.
 
-This project is an AI-powered news website that detects and filters harmful or offensive comments, ensuring a safe and clean user experience.
+⚡ Features:
 
-🛠️ Technologies
+🛡️ Real-time detection of harmful or offensive comments
+
+🤖 Automated moderation workflow with n8n
+
+📝 AI-driven content analysis using NLP models
+
+🛠️ Technologies:
 
 Backend: Python
 
-Frontend: (React / HTML / CSS)
+Frontend: React / HTML / CSS
 
-AI: Natural Language Processing for comment analysis
+AI & Automation: NLP models + n8n
 
 Database: Firebase
-
-⚡ Features
-
-Automatically detects harmful and offensive comments
-
-Moderation system to maintain safe content
-
-Analyzes user comments in real-time to keep the site clean
-
-🤖 AI Module
-
-Uses NLP models for comment analysis
-
-Provides real-time comment filtering
